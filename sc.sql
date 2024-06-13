@@ -67,3 +67,18 @@ INSERT INTO SC values('20180004', '81003', 97, '20201', '81002-02');
 INSERT INTO SC values('20180205', '81003', 68, '20202', '81003-01');
 
 COMMIT;
+
+DROP TABLE IF EXISTS `admin`;
+CREATE TABLE `admin` (
+  `id` int(11) NOT NULL DEFAULT '0',
+  `username` text,
+  `password` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of admin
+-- ----------------------------
+INSERT INTO `admin` VALUES ('1', 'admin', 'admin');
+INSERT INTO `admin` VALUES ('2', 'admin2', 'admin2');
+INSERT INTO `admin` VALUES ('4', 'ayy2', '114514');
